@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+    <!-- header section starts-->
+    <header class="header">
+        <a href="./index.html" class="logo">
+            <i class="fas fa-shopping-basket"></i> GroceryHeaven
+        </a>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <div class="dropdown-content">
+                    <a href="../html/veg.html">Vegetables</a>
+                    <a href="../html/daily.html">Dairy Products</a>
+                    <a href="../html/cosmetic.html">Cosmetic & Skincare</a>
+                </div>
+            </div>
+            <a href="./product.html">Product</a>
+            <a href="./gift.html">Gift Card</a>
+            <a href="./reg.html">Registration</a>
+        </nav>
+        <div class="icon">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+    
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    
+        <form action="" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Your Email Address" class="box">
+            <input type="password" placeholder="Your Password" class="box">
+            <p>Forget Your Password <a href="#">Click Here</a></p>
+            <p>Don't Have An Account <a href="#">Create Now </a></p>
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+    </header>
+    <!-- header section end -->
+
+    <main> 
+
+        <!-- ORDER FORM -->
+        <div class="order-formHead">
+            <form action="" id="order-form">
+                <CENTER><h1>ORDER SUMMARY</h1></CENTER>
+                <!-- Buttons -->
+                <div class="Favouritesbtn">
+                    <button id="save">Add to Favourites</button>
+                    <button id="load">Load Favourites</button>
+                </div>
+                <!-- Customer Detail Section -->
+                <div class="name-section">
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" name="customerName" placeholder="Your Name" required>
+                </div>
+                <div class="name-section">
+                    <label for="address">Delivery Address</label>
+                    <input type="text" id="address" name="address" placeholder="Delivery Address" required>
+                </div>
+                <div class="name-section">
+                    <label for="contact">Contact Number</label>
+                     <input type="number" id="contact" name="contact" placeholder="Your Contact Number" required>
+                </div>
+    
+                <!-- Payment Detail Section -->
+                
+                <div class="name-section">
+                    <label for="carType">Card Type</label>
+                    <select name="carType" id="cardType">
+                    <option value="master">Mastercard</option>
+                    <option value="visa">Visa</option>
+                    </select>
+                </div>
+    
+                <div class="payment-section">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="number" id="cardNumber" name="cardNumber" placeholder="Card Number" required>
+                </div>
+    
+                <div class="payment-section">
+                    <label for="cvv">CVV No</label>
+                    <input type="number" id="cvv" name="cvv" placeholder="CVV" required>
+                </div><br>
+    
+                <div class="cart">
+                    <table id="cart-table">
+                      <caption>PRODUCT CART</caption>
+                      <thead>
+                        <tr>
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Total</th>
+                          <th>Remove Product</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Product Name</td>
+                          <td>
+                            <div class="quantity">
+                              <input type="number" value="1" id="quantity">
+                            </div>
+                          </td>
+                          <td>Price</td>
+                          <td>Total</td>
+                          <td>
+                            <button>Remove</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                      
+                    </table>
+                </div><br>
+                <center><div class="total-price"></center>
+                </div>
+    
+                <div class="payment-buttons">
+                    <Button id="pay">Pay</Button>
+                </div>
+    
+            </form>
+         </div>
+    
+    </main>
+
+
+    <!--Footer section starts-->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>GroceryHeaven <i class="fas fa-shopping-basket"></i></h3>
+                <p>Social media links</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +9477 555 9890</a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +9481 221 5850</a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> groceryheaven@gamil.com</a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Sri Lanka, Kandy, 2000</a>
+            </div>
+
+            <div class="box">
+                <h3>Navigation</h3>
+                <a href="./index.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="./about.html" class="links"> <i class="fas fa-arrow-right"></i> About </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Categories </a>
+                <a href="./product.html" class="links"> <i class="fas fa-arrow-right"></i> Product </a>
+                <a href="./gift.html" class="links"> <i class="fas fa-arrow-right"></i> Gift Card </a>
+                <a href="./reg.html" class="links"> <i class="fas fa-arrow-right"></i> Registration </a>
+            </div>
+
+            <div class="box">
+                <h3>Newslatter</h3>
+                <p>Subscribe For Latest Updates </p>
+                <input type="email" placeholder="Your Email Address" class="email">
+                <input type="submit" value="subscribe" class="btn-1">
+            </div>
+            
+            
+        </div>
+    </section>
+    <!--Footer section ends -->
+
+
+
+
+
+
+
+    <script src="../JS/main2.js"></script>
+</body>
+</html>
