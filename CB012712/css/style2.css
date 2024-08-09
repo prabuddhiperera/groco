@@ -930,3 +930,7 @@ form{
   border: 1px solid #ccc; /* Add a border if desired */
   border-radius: 4px; /* Optional: round the corners */
 }
+
+.centered-content {
+  text-align: center;
+}
